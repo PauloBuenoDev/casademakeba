@@ -1,0 +1,134 @@
+body {
+    background-image: url('img/iStock-177512311.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Mantendo seu header original */
+header {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 15px 40px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Logo e Nome do Site */
+.logo-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.site-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: cornsilk;
+}
+
+/* Menu */
+#menu-h {
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+}
+
+#menu-h ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+#menu-h ul li {
+    display: inline-block;
+}
+
+#menu-h ul li a {
+    color: cornsilk;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background 0.4s, color 0.4s;
+}
+
+#menu-h ul li a:hover {
+    background-color: salmon;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Estilização da seção principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+/* Estilizando os blocos de conteúdo */
+.card {
+    background-color :#c8a2c8;
+    color: aliceblue;
+    width: 35%;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+}
+
+.card image{
+   
+}
+
+
+.card.dark {
+    background-color: #3b69af;
+    color: white;
+    max-width: 500px
+}
+
+.card.dark img {
+    border-radius: 100px;
+    width: ;
+}
+
+/* Título dos cartões */
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Botões */
+.button {
+    display: inline-block;
+    background-color: #E39D3D;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background-color: #C47F2B;
+}

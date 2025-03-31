@@ -1,0 +1,16 @@
+* {
+background-color:black;
+color: antiquewhite;
+text-align: center;
+
+
+
+}
+
+.titulo-destaque{
+    color: orangered;
+}
+
+header img {
+    border-radius: 50px;
+}
