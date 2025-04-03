@@ -1,0 +1,14 @@
+*{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
+header img {
+    border-radius: 50px;
+}
+
+footer img {
+        width: 80px; /* Define a largura */
+        height: auto; /* Mantém a proporção original */
+      
+}
