@@ -42,32 +42,59 @@ header {
     color: cornsilk;
 }
 
+#menu-list.show {
+    display: flex;
+}
+
 /* Menu */
 #menu-h {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    color: cornsilk;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-wrap:wrap;
+        justify-content: space-between;
+        padding: 15px 20px;
+    }
+}
+
+.menu-toggle {
+    display: block;
 }
 
 #menu-h ul {
-    list-style: none;
-    display: flex;
-    gap: 40px;
-    padding: 0;
-    margin: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 20px 0 ;
+    gap: 20px;
 }
 
-#menu-h ul li {
-    display: inline-block;
+#menu-ul.show {
+    display: flex;
+
 }
+
 
 #menu-h ul li a {
-    color: cornsilk;
-    padding: 20px;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    transition: background 0.4s, color 0.4s;
+   padding: 10px 20px;
+   font-size: 18px;
 }
 
 #menu-h ul li a:hover {

@@ -1,0 +1,70 @@
+body {
+    background-image: url('img/iStock-177512311.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+}
+
+.Card.Tarot {
+    background:rgba(200, 130, 230,  0.3);
+    backdrop-filter: blur(12px);
+    border: 2px solid rgba(200, 130, 230, 0.6);
+    color: aliceblue;
+    width: 35%;
+    position: relative;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+.Card.MesaKarmica {
+    background:rgba(200, 130, 230,  0.3);
+    backdrop-filter: blur(12px);
+    border: 2px solid rgba(200, 130, 230, 0.6);
+    color: aliceblue;
+    width: 35%;
+    position: relative;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+}
+
+.Card.Tarot img {
+    border-radius: 50px;
+    width: 100%;
+}
+
+.Card.MesaKarmica img {
+    border-radius: 50px;
+    width: 100%;
+}
+
+.conteudo-completo {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+  }
+  
+  .conteudo-completo.expandido {
+    max-height: 1500px; /* ajuste conforme o tamanho do conteúdo */
+  }
+  
+  .btn-toggle {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .btn-toggle:hover {
+    background-color: #666;
+  }
+  

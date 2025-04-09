@@ -2,9 +2,6 @@
 background-image: url('img/iStock-177512311.jpg');
 color: antiquewhite;
 text-align: center;
-
-
-
 }
 
 .titulo-destaque{
@@ -13,4 +10,151 @@ text-align: center;
 
 header img {
     border-radius: 50px;
+}
+
+body {
+    background-image: url('img/iStock-177512311.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+}
+
+/* Mantendo seu header original */
+header {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 15px 40px;
+    color: white;
+    position: fixed;
+    padding-top: 20px;
+    width: 100%;
+    top:0;
+    left: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 1000;
+}
+
+/* Logo e Nome do Site */
+.logo-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.site-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: cornsilk;
+}
+
+#menu-list.show {
+    display: flex;
+}
+
+/* Menu */
+#menu-h {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    color: cornsilk;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-wrap:wrap;
+        justify-content: space-between;
+        padding: 15px 20px;
+    }
+}
+
+.menu-toggle {
+    display: block;
+}
+
+#menu-h ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 20px 0 ;
+    gap: 20px;
+}
+
+#menu-ul.show {
+    display: flex;
+
+}
+
+
+#menu-h ul li a {
+   padding: 10px 20px;
+   font-size: 18px;
+}
+
+#menu-h ul li a:hover {
+    background-color: salmon;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Estilização da seção principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+/* Estilizando os blocos de conteúdo */
+.card {
+    background:rgba(200, 130, 230,  0.3);
+    backdrop-filter: blur(12px);
+    border: 2px solid rgba(200, 130, 230, 0.6);
+    color: aliceblue;
+    width: 35%;
+    position: relative;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+.button {
+    display: inline-block;
+    background-color: #E39D3D;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background-color: #C47F2B;
 }

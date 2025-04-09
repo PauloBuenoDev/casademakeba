@@ -1,25 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mim</title>
-    <link rel="stylesheet" href="styleabout.css">
-    <h1>Descobra mais sobre você e sua persona <strong class="titulo-destaque">SE PERMITA!</strong></h1>
-    <h2>Minha conexão com as cartas e a leitura e decodificação do oraculo inicia ainda na minha juventude, apoiada por uma Mãe de Santo, que me incentivava a praticar a leitura primeiramente em pedaços de papel cortados e enumerados. E com o passar do tempo o baralho comum de jogo, empolgada com tal energia e magia, passo a ler para amigas do colégio e amigas de bairro ...
-        e me surpreendia em como as informações batiam, e vinham de forma natural..</h1>
-       
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre mim</title>
+  <meta name="description" content="Casa de MAKEBA - Consultas espirituais, fitoterapia, leitura de cartas e mesa kármica. Agende sua consulta!">
+  <meta name="author" content="Casa de MAKEDA">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="styleabout.css">
 </head>
 <body>
-    <header>
-        <div class="center">
-            <img src="./img/makeba.jpg" alt="">
-            <h2>Dali em diante meu companheiro de vida, e de caminhada, sempre estudando, treinando, aprimorando e dele veio então a curiosidade e necessidade de ir além em meus estudos, compreender melhor como, e por que. E então meu percurso dentro do mundo do misticismo se amplia ali!  
-                No ano de 2009, passo então a me dedicar a mais estudos de temas que possam envolver o Universo e o Ocultismo, como Filosofia, Teologia, Alquimia, Astrologia e o próprio Baralho e Tarot. Passando por religiões e templos diversos, ainda na Capital São Paulo, o que me facilitou ter acesso a inúmeras Filosofias e Culturas diferentes.
-                Sou grata por ter crescido em uma família com diversidade religiosa, o que me deu bagagem e compreensão ainda cedo, de que não há verdade absoluta ou uma única forma de nos conectarmos a Divindade, cada um a sua maneira.</h2>
-    
-        </div>
-    </header>
+
+  <!-- Menu importado dinamicamente -->
+  <div id="menu-container"></div>
+
+  <main class="container">
+    <h1>Descubra mais sobre você e sua persona <strong class="titulo-destaque">SE PERMITA!</strong></h1>
+
+    <section class="card">
+      <img src="./img/makeba.jpg" alt="Imagem de Makeba">
+      <p>Minha conexão com as cartas e a leitura e decodificação do oráculo inicia ainda na minha juventude, apoiada por uma Mãe de Santo, que me incentivava a praticar a leitura primeiramente em pedaços de papel cortados e enumerados. E com o passar do tempo o baralho comum de jogo, empolgada com tal energia e magia, passo a ler para amigas do colégio e amigas de bairro ... e me surpreendia em como as informações batiam, e vinham de forma natural.</p>
+
+      <p>Dali em diante meu companheiro de vida, e de caminhada, sempre estudando, treinando, aprimorando e dele veio então a curiosidade e necessidade de ir além em meus estudos, compreender melhor como, e por que. E então meu percurso dentro do mundo do misticismo se amplia ali!</p>
+
+      <p>No ano de 2009, passo então a me dedicar a mais estudos de temas que possam envolver o Universo e o Ocultismo, como Filosofia, Teologia, Alquimia, Astrologia e o próprio Baralho e Tarot. Passando por religiões e templos diversos, ainda na Capital São Paulo, o que me facilitou ter acesso a inúmeras Filosofias e Culturas diferentes.</p>
+
+      <p>Sou grata por ter crescido em uma família com diversidade religiosa, o que me deu bagagem e compreensão ainda cedo, de que não há verdade absoluta ou uma única forma de nos conectarmos à Divindade — cada um a sua maneira.</p>
+    </section>
+  </main>
+
+  <!-- Scripts -->
+  <script>
+    // Importa o menu
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('menu-container').innerHTML = data;
+      });
+  </script>
+  <script src="script.js" defer></script>
 </body>
 </html>
