@@ -112,7 +112,7 @@ nav {
     gap: 20px;
 }
 
-#menu-ul.show {
+#menu-list.show {
     display: flex;
 
 }
@@ -200,3 +200,15 @@ nav {
 .button:hover {
     background-color: #C47F2B;
 }
+
+@media (min-width: 769px) {
+    #menu-list {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+  
+    .menu-toggle {
+      display: none;
+    }
+  }
