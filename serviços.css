@@ -44,6 +44,26 @@ body {
     width: 100%;
 }
 
+.Card.fitoterapia {
+  background:rgba(200, 130, 230,  0.3);
+  backdrop-filter: blur(12px);
+  border: 2px solid rgba(200, 130, 230, 0.6);
+  color: aliceblue;
+  width: 35%;
+  position: relative;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+
+}
+
+.Card.fitoterapia img {
+  border-radius: 50px;
+  width: 100%;
+}
+
 .conteudo-completo {
     max-height: 0;
     overflow: hidden;
