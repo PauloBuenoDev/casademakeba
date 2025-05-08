@@ -1,90 +1,110 @@
 body {
-    background-image: url('img/iStock-177512311.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 80px;
+  background-image: url('img/iStock-177512311.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 80px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.Card.Tarot {
-    background:rgba(200, 130, 230,  0.3);
-    backdrop-filter: blur(12px);
-    border: 2px solid rgba(200, 130, 230, 0.6);
-    color: aliceblue;
-    width: 35%;
-    position: relative;
-    padding: 20px;
-    border-radius: 30px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    overflow: hidden;
-    
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
 }
 
-.Card.MesaKarmica {
-    background:rgba(200, 130, 230,  0.3);
-    backdrop-filter: blur(12px);
-    border: 2px solid rgba(200, 130, 230, 0.6);
-    color: aliceblue;
-    width: 35%;
-    position: relative;
-    padding: 20px;
-    border-radius: 30px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    overflow: hidden;
-}
-
-.Card.Tarot img {
-    border-radius: 50px;
-    width: 100%;
-}
-
-.Card.MesaKarmica img {
-    border-radius: 50px;
-    width: 100%;
-}
-
-.Card.fitoterapia {
-  background:rgba(200, 130, 230,  0.3);
+.Card {
+  background: rgba(200, 130, 230, 0.3);
   backdrop-filter: blur(12px);
   border: 2px solid rgba(200, 130, 230, 0.6);
   color: aliceblue;
   width: 35%;
-  position: relative;
   padding: 20px;
   border-radius: 30px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
   overflow: hidden;
-
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
 }
 
-.Card.fitoterapia img {
+.Card img {
   border-radius: 50px;
   width: 100%;
+  max-width: 150px;
+  margin-bottom: 15px;
 }
 
 .conteudo-completo {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.6s ease;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.conteudo-completo.expandido {
+  max-height: 1000px;
+}
+
+.resumo {
+  transition: all 0.3s ease;
+}
+
+.btn-toggle {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-toggle:hover {
+  background-color: #666;
+}
+
+/* ✅ Ajuste para tablets e telas menores */
+@media (max-width: 992px) {
+  .Card {
+    width: 45%;
   }
-  
-  .conteudo-completo.expandido {
-    max-height: 1500px; /* ajuste conforme o tamanho do conteúdo */
+}
+
+/* ✅ Ajuste para telas de até 768px (tablets pequenos e celulares na horizontal) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 15px;
   }
-  
+
+  .Card {
+    width: 90%;
+    max-width: 500px;
+  }
+}
+
+/* ✅ Ajuste para telas de até 480px (celulares em modo retrato) */
+@media (max-width: 480px) {
+  .Card {
+    width: 95%;
+    padding: 15px;
+  }
+
   .btn-toggle {
-    margin-top: 10px;
-    padding: 10px 15px;
-    background-color: #444;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+    padding: 8px 12px;
+    font-size: 14px;
   }
-  
-  .btn-toggle:hover {
-    background-color: #666;
+
+  .Card img {
+    max-width: 120px;
   }
-  
+}
