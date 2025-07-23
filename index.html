@@ -1,49 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa de MAKEDA</title>
-    <meta name="description" content="Casa de MAKEBA - Consultas espirituais, fitoterapia, leitura de cartas e mesa kármica. Agende sua consulta!">
-    <meta name="author" content="Casa de MAKEDA">
-    <meta name="robots" content="index , follow">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casa de MAKEDA</title>
+  <meta name="description" content="Casa de MAKEBA - Consultas espirituais, fitoterapia, leitura de cartas e mesa kármica. Agende sua consulta!" />
+  <meta name="author" content="Casa de MAKEDA" />
+  <meta name="robots" content="index, follow" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="img/logo.svg" alt="Logo Casa de MAKEDA" class="logo">
-            <span class="site-name">Casa de MAKEDA</span>
-        </div>
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-        <nav id="menu-h">
-            <ul id="menu-list">
-                <li><a href="https://makedabqeen.mercadoshops.com.br">MINHA LOJA</a></li>
-                <li><a href="https://www.youtube.com/@MakedaBQeen">YOUTUBE</a></li>
-                <li><a href="https://www.instagram.com/makeda.bqeen?igsh=bTdocHE5Y2hrZW9r">INSTAGRAM</a></li>
-                <li><a href='https://wa.me/+5511958385309?text=Ol%C/3%A1%20Makeba%20!%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20e%20descobrir%20mais%20sobre%20mim%20!'>CONTATO</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="logo-container">
+      <img src="img/logo.svg" alt="Logo Casa de MAKEDA" class="logo" />
+      <span class="site-name">Casa de MAKEDA</span>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav id="menu-h">
+      <ul id="menu-list">
+        <li><a href="index.html">MINHA LOJA</a></li>
+        <li><a href="https://www.youtube.com/@MakedaBQeen">YOUTUBE</a></li>
+        <li><a href="https://www.instagram.com/makeda.bqeen?igsh=bTdocHE5Y2hrZW9r">INSTAGRAM</a></li>
+        <li><a href="https://wa.me/+5511958385309?text=Olá%20Makeba!%20Gostaria%20de%20agendar%20um%20horário%20e%20descobrir%20mais%20sobre%20mim!">CONTATO</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main class="container">
-        <section class="card dark">
-            <img src="img/makeba.jpg" alt="Imagem de Makeba">
-            <h1>conheça mais sobre mim </h1>
-            <p>Um <b>programa de acompanhamento</b> teste.</p>
-            <a href='about.html' class="button">🔍saiba mais</a>
-        </section>
+  <main class="container">
+    <section class="card dark">
+      <img src="img/makeba.jpg" alt="Imagem de Makeba" />
+      <h1>conheça mais sobre mim</h1>
+      <p>Um <b>programa de acompanhamento</b> teste.</p>
+      <a href="about.html" class="button">🔍saiba mais</a>
+    </section>
 
-        <section class="card">
-            <img src='./img/baralho.jpg' alt="Imagem de um baralho">
-        <h2>serviços como fitoterapia - leitura de cartas - mesa karmica</h2>
-            <img src="./img/fitoterapia.jpg" alt="Imagem de fitoterapia">
-            <h1>Casa de MAKEDA</h1>
-            <p>É aqui que você irá se redescobrir! <b>entenda o que posso fazer</b></p>
-            <p>Conheça meus serviços</p>
-            <a href='servicos.html' class="button">📜saiba mais</a>
-        </section>
-    </main>
-    <script src="script.js" defer></script>
+    <section class="card">
+      <img src="./img/baralho.jpg" alt="Imagem de um baralho" />
+      <h2>serviços como fitoterapia - leitura de cartas - mesa karmica</h2>
+      <img src="./img/fitoterapia.jpg" alt="Imagem de fitoterapia" />
+      <h1>Casa de MAKEDA</h1>
+      <p>É aqui que você irá se redescobrir! <b>entenda o que posso fazer</b></p>
+      <p>Conheça meus serviços</p>
+      <a href="servicos.html" class="button">📜saiba mais</a>
+    </section>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu-list');
+      const isMobile = window.innerWidth <= 768;
+      if (isMobile && menu) {
+        menu.classList.toggle('show');
+      }
+    }
+  </script>
 </body>
 </html>

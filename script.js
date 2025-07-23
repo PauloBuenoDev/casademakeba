@@ -30,19 +30,7 @@ window.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// Função para o menu mobile
 function toggleMenu() {
   const menu = document.getElementById('menu-list');
-  const isMobile = window.innerWidth <= 768;
-
-  if (isMobile) {
-    menu.classList.toggle('show');
+  menu.classList.toggle('show');
   }
-}
-
-// Carregar menu externo
-fetch('menu.html')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('menu-container').innerHTML = data;
-  });
